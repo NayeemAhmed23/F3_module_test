@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #000;
+  height: 100vh;
+  color: white;
+  width: 50vw;
+}
+.left-container img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.left-container h1 {
+  color: #575a85;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 33px 0px 29px 41px;
+}
+.left-container p {
+  color: #b8bccc;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 41px;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #575a85;
+  height: 100vh;
+  width: 50vw;
+  color: white;
+}
+.right-container h1 {
+  color: #b8bccc;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 250px;
+}
+.right-container button {
+  border-radius: 10px;
+  width: 345px;
+  height: 67px;
+  border: 2px solid #b8bccc;
+  margin: auto;
+  margin-bottom: 250px;
+  color: #b8bccc;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  outline: none;
+  background: transparent;
+}
+.right-container button:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    transform: translateY(-2px);
+    background-color: white;
+}
+@media screen and (max-width: 720px) {
+    .main-container{
+        flex-direction: column;
+        height: 100vh; 
+        flex-wrap: wrap;
+    }
+    .left-container{
+        width: 100%;
+        height: 60%;
+        padding-bottom: 2%;
+    }
+    .right-container{
+        width: 100%;
+        height: 40%;
+    }
+  
+    img{
+        padding-top: 0;
+        height: auto; 
+       width: 45%; 
+    }
+   
+   .left-container h1{
+        font-size: 28px;
+        padding-bottom: 1%;
+    }
+    .left-container p{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .right-container p{
+        font-size: 18px;
+    }
+    
+    .right-container button{
+        width: 145px;
+        height: 37px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 350px) {
+    img{
+        padding-top: 0;
+        height: auto; 
+        width: 60%; 
+    }
+    
+    
+    .left-container h1{
+        font-size: 23px;
+        padding-bottom: 1%;
+    }
+    .left-container p{
+        font-size: 12px;
+    }
+    .left-container{
+        padding-bottom: 10%;
+    }
+}
